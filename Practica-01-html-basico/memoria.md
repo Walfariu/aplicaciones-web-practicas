@@ -29,7 +29,7 @@ ENLACES
 
 IMAGENES
  ![Texto alternativo](ruta-o-url-de-la-imagen.png)
- (https://media.tenor.com/rJu8dZ-SMCoAAAAe/matthias-matthias-limbus.png)
+ (https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVrvLDEV11LK-vmkdBkO8EXFRmSEXSvsP-ZZppfG-Rv_4xjx6t)
 CODIGO
  Codigo en linea: usa comillas simples invertidas
  Para centrar un elemento se usa la propiedad `text-align`.
