@@ -31,7 +31,9 @@ IMAGENES
 ![Texto alternativo] (ruta-o-url-de-la-imagen.png)
 
 
-![Captura resultado final](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVrvLDEV11LK-vmkdBkO8EXFRmSEXSvsP-ZZppfG-Rv_4xjx6t)
+[Captura resultado final](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVrvLDEV11LK-vmkdBkO8EXFRmSEXSvsP-ZZppfG-Rv_4xjx6t)
+
+(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVrvLDEV11LK-vmkdBkO8EXFRmSEXSvsP-ZZppfG-Rv_4xjx6t)
 
  
 
