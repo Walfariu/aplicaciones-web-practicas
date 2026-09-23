@@ -28,7 +28,7 @@ ENLACES
  [Memoria de la práctica 1](./practica-01-html-basico/memoria.md)
 
 IMAGENES
- ![Texto alternativo]!(ruta-o-url-de-la-imagen.png)
+ [Texto alternativo]!(ruta-o-url-de-la-imagen.png)
  
  <img width="1080" height="604" alt="1000020349" src="https://github.com/user-attachments/assets/46e8e127-f150-43b9-befa-58cef6919e44" />
 
