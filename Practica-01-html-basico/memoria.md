@@ -29,7 +29,7 @@ ENLACES
 
 IMAGENES
  ![Texto alternativo](ruta-o-url-de-la-imagen.png)
- !(https://media.tenor.com/rJu8dZ-SMCoAAAAe/matthias-matthias-limbus.png)
+ (https://media.tenor.com/rJu8dZ-SMCoAAAAe/matthias-matthias-limbus.png)
 CODIGO
  Codigo en linea: usa comillas simples invertidas
  Para centrar un elemento se usa la propiedad `text-align`.
