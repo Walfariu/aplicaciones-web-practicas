@@ -7,6 +7,6 @@ Este es un repositorio donde se alamcenan las parcticas de aplicaciones web.
 
 ## Indice de practicas
 
-| Nº | Practica                           | Memoria                    |
-|----|------------------------------------|----------------------------|
-| 1  | Introduccion a HTML basico         | [Ver memoria](./Practica-01-html-basico) |b
+| Nº | Practica                                            | Memoria                    |
+|----|-----------------------------------------------------|----------------------------|
+| 1  | Introduccion a HTML basico                          | [Ver memoria](./Practica-01-html-basico) |b
