@@ -1,2 +1,12 @@
-# aplicaciones-web-practicas
-practicas de aplicaiones web
+#Practicas de Aplicaciones Web
+
+Este es un repositorio donde se alamcenan las parcticas de aplicaciones web.
+
+**Alumno:** Julian Andres Gaviria Garcia
+**Curso:** 2º SMX
+
+## Indice de practicas
+
+| Nº | Practica                           | Memoria                    |
+|----|------------------------------------|----------------------------|
+| 1  | Introduccion a HTML basico         | [Ver memoria](./Practica-01-html-basico) |b
