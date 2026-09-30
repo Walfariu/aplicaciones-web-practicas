@@ -3,9 +3,12 @@ Añadida memoria practica 1
 <!--Comandos para escribir en Markdown-->
 
 TITULOS.
- #Titulo de nivel 1
- ##Titulo de nivel 2
- ###Titulo de nivel 3
+
+#Titulo de nivel 1
+
+##Titulo de nivel 2
+
+###Titulo de nivel 3
 
 NEGRITA, CURSIVA, TACHADO.
  **Esto es negrita**
