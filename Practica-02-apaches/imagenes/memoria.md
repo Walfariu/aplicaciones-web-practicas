@@ -1,1 +1,0 @@
-aqui guardo las imagenes
