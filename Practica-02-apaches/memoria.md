@@ -115,10 +115,26 @@ Aqui se veran los comandos base para poder administrar el servidor con Apaches
 ![enable apache](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.2.png?raw=true)
 
 - `sudo systemctl disable apache2`: *este comando desactiva el arranque automatico del servicio de Apache al iniciar el servidor*
+  
+![disable apache](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.3.png?raw=true)
 
 - `apache2ctl configtest`: *este comando comprueba si hay errores de sintaxis de la configuracion*
 
+![configtest](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.4.png?raw=true)
 
+- `apache2ctl -S`: *este comando sirve para ver los sitios web (virtual host) cargados*
+
+![apache2ctl s](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.5.png?raw=true)
+
+- `apache2ctl -M`: *este comando permite ver la lista de modulos cargados del servidor*
+
+![apache2ctl m](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.6.png?raw=true)
+
+- `a2enmod / a2dismod`: *estos dos comandos permiten activar y desactivar modulos* 
+
+- `a2ensite / a2dissite`: *estos dos comandos permiten activar y desactivar sitios web*
+
+- `a2enconf / a2disconf`: *estos dos comandos permiten activar y desactivar fragmentos de configuraciones*
 
 
 
