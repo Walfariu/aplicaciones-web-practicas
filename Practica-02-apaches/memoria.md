@@ -163,6 +163,25 @@ Captura del contenido de `/etc/apache2/`.
 Apache usa enlaces simbolicos porque permiten una organizacion mas limpia y sencilla ya que en `*-available` guarda la configuracion de sitios y modulos pero para activarlos o desactivarlos solo hace falta borrar o crear su enlacesimbolico en `*-enable` y asi nunca se pierde la configuracion.
 
 
+# Paso.6 Modificaciones tipìcas del servicio
+
+
+
+
+
+# Paso.7 Modulos de Apache
+
+
+
+
+**PREGUNTA**
+
+¿Qué ocurre si desactivas un módulo del que depende otro?
+
+Al desactivar un modulo clave del que dependen otros apache detectara un error de sintaxis fallando al reiniciar o recargar el servidor y seguira dando error hasta que se vuelva a activar el modulo.
+
+
+
 
 
 
