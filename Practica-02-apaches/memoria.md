@@ -110,15 +110,15 @@ Aqui se veran los comandos base para poder administrar el servidor con Apaches
 
 -  `sdo systemctl reload apache2`: *este comando reinicia el servidor pero sin cortar el servicio permitiendo la recarga de paquetes o cambios en el servidor.*
 
--  `sudo systemctl enable apache2`: *al ejecutar el comando hace que al arrancar el servidor el servicio de Apache se ejecute automaticamente*
+-  `sudo systemctl enable apache2`: *al ejecutar el comando hace que al arrancar el servidor el servicio de Apache se ejecute automaticamente*.
 
 ![enable apache](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.2.png?raw=true)
 
-- `sudo systemctl disable apache2`: *este comando desactiva el arranque automatico del servicio de Apache al iniciar el servidor*
+- `sudo systemctl disable apache2`: *este comando desactiva el arranque automatico del servicio de Apache al iniciar el servidor*.
   
 ![disable apache](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.3.png?raw=true)
 
-- `apache2ctl configtest`: *este comando comprueba si hay errores de sintaxis de la configuracion*
+- `apache2ctl configtest`: *este comando comprueba si hay errores de sintaxis de la configuracion*.
 
 ![configtest](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.4.png?raw=true)
 
@@ -126,19 +126,19 @@ Aqui se veran los comandos base para poder administrar el servidor con Apaches
 
 ![apache2ctl s](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.5.png?raw=true)
 
-- `apache2ctl -M`: *este comando permite ver la lista de modulos cargados del servidor*
+- `apache2ctl -M`: *este comando permite ver la lista de modulos cargados del servidor*.
 
 ![apache2ctl m](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte4.6.png?raw=true)
 
-- `a2enmod / a2dismod`: *estos dos comandos permiten activar y desactivar modulos* 
+- `a2enmod / a2dismod`: *estos dos comandos permiten activar y desactivar modulos*.
 
-- `a2ensite / a2dissite`: *estos dos comandos permiten activar y desactivar sitios web*
+- `a2ensite / a2dissite`: *estos dos comandos permiten activar y desactivar sitios web*.
 
-- `a2enconf / a2disconf`: *estos dos comandos permiten activar y desactivar fragmentos de configuraciones*
+- `a2enconf / a2disconf`: *estos dos comandos permiten activar y desactivar fragmentos de configuraciones*.
 
 # Paso.5 Ficheros y Directorios importantes
 
-En esta ruta de ficheros `ls -l /etc/apache2/` es donde se encontraran todos los ficheros de configuracion e importantes algunos de ellos siendo los siguientes
+En esta ruta de ficheros `ls -l /etc/apache2/` es donde se encontraran todos los ficheros de configuracion e importantes algunos de ellos siendo los siguientes.
 
 |   ruta                                         |   Descripcion                                            |
 |------------------------------------------------|----------------------------------------------------------|
@@ -163,13 +163,13 @@ Captura del contenido de `/etc/apache2/`.
 Apache usa enlaces simbolicos porque permiten una organizacion mas limpia y sencilla ya que en `*-available` guarda la configuracion de sitios y modulos pero para activarlos o desactivarlos solo hace falta borrar o crear su enlacesimbolico en `*-enable` y asi nunca se pierde la configuracion.
 
 
-# Paso.6 Modificaciones tipìcas del servicio
+# Paso.6 Modificaciones tipìcas del servicio.
 
 
 
 
 
-# Paso.7 Modulos de Apache
+# Paso.7 Modulos de Apache.
 
 
 
@@ -181,12 +181,34 @@ Apache usa enlaces simbolicos porque permiten una organizacion mas limpia y senc
 Al desactivar un modulo clave del que dependen otros apache detectara un error de sintaxis fallando al reiniciar o recargar el servidor y seguira dando error hasta que se vuelva a activar el modulo.
 
 
+# Paso.8 Varios sitios en el mismo servidor (Virtual Host).
 
 
 
 
+**PREGUNTA**
+
+¿Qué diferencia hay entre virtual hosts basados en nombre y basados en IP? ¿Cuál has usado?
+
+- **Virtual Host por nombre:** en este tipo multiples nombres o dominios web comparten la misma direccion ip y el mismo puerto, apache distingue a que sitio quiere acceder el cliente leyendo la cabecera HTTP que envia el navegador en la peticion.
+
+-  **Virtual Host por IP:** en este tipo cada web tiene una direccion IP distinta en la misma maquina, apache redirige en funcion de la IP.
+
+Y en este caso hemos usado el Virtual Host por nombre para sitio 1 y 2.
 
 
+# Paso.9 Permisos y Propietarios.
+
+- **Que sifnifican 755 y 644**
+     - **755:** Para directorios, Propietario `rwx` (lectura, escritura, ejecución), Grupo `r-x` (lectura y ejecución), Otros `r-x` (lectura y ejecución). Permite a Apache y a los visitantes web entrar al directorio y listar su contenido.
+     - **644:** Para archivos Propietario, `rw-` (lectura y escritura), Grupo `r--` (solo lectura), Otros `r--` *(solo lectura)*. Permite a Apache leer el archivo para servirlo en la web, pero evita que los visitantes o usuarios sin privilegios modifiquen su contenido.
+
+- Por qué NUNCA se deben usar permisos 777 en un servidor web:
+     - El permiso 777 da acceso completo de lectura, escritura y ejecución a todos los usuarios del sistema operativo. Si un sitio web sufre una vulnerabilidad de inyección de código, un atacante podría crear, modificar o borrar cualquier archivo web del servidor o ejecutar scripts maliciosos.
+ 
+- Por qué el contenido web no debe pertenecer a root ni ser escribible por todos:
+     - Si los archivos pertenecen al usuario root y se ejecutan procesos con sus privilegios, cualquier fallo de seguridad en una aplicación web le otorgaría al atacante control absoluto sobre todo el sistema operativo.
+     - Tampoco deben ser escribibles por todos para evitar que un usuario sin privilegios o un servicio comprometido altere el código de las páginas web servidas.
 
 
 
