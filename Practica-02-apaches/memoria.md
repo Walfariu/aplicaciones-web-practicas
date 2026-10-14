@@ -136,14 +136,31 @@ Aqui se veran los comandos base para poder administrar el servidor con Apaches
 
 - `a2enconf / a2disconf`: *estos dos comandos permiten activar y desactivar fragmentos de configuraciones*
 
+# Paso.5 Ficheros y Directorios importantes
 
+En esta ruta de ficheros `ls -l /etc/apache2/` es donde se encontraran todos los ficheros de configuracion e importantes algunos de ellos siendo los siguientes
 
+|   ruta                                         |   Descripcion                                            |
+|------------------------------------------------|----------------------------------------------------------|
+|/etc/apache2/apache2.conf                       |Fichero de configuración principal                        |
+|/etc/apache2/ports.conf                         |Puertos en los que escucha Apache                         |
+|/etc/apache2/sites-available/                   |Sitios disponibles (definidos, no necesariamenteactivos)  |
+|/etc/apache2/sites-enabled/                     |Sitios activos (enlaces simbólicos a sites-available)     |
+|/etc/apache2/mods-available/ y mods-enabled/    |Módulos disponibles y activos                             |
+|/etc/apache2/conf-available/ y conf-enabled/    |Fragmentos de configuración disponibles y activos         |
+|/etc/apache2/envvars                            |Variables de entorno (usuario y grupo de ejecución,etc.)  |
+|/var/www/html/                                  |Directorio raíz por defecto (DocumentRoot)                |
+|/var/log/apache2/access.log                     |Registro de accesos                                       |
+|/var/log/apache2/error.log                      |Registro de errores                                       |
 
+Captura del contenido de `/etc/apache2/`.
 
+![ruta](https://github.com/Walfariu/aplicaciones-web-practicas/blob/main/Practica-02-apaches/imagenes/parte5.png?raw=true)
 
+**PREGUNTA**
+¿Por qué Apache usa enlaces simbólicos entre los directorios *-available y *-enabled?
 
-
-
+Apache usa enlaces simbolicos porque permiten una organizacion mas limpia y sencilla ya que en `*-available` guarda la configuracion de sitios y modulos pero para activarlos o desactivarlos solo hace falta borrar o crear su enlacesimbolico en `*-enable` y asi nunca se pierde la configuracion.
 
 
 
