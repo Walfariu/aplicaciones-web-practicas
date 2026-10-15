@@ -9,4 +9,5 @@ Este es un repositorio donde se alamcenan las parcticas de aplicaciones web.
 
 | Nº | Practica                                      | Memoria                    |
 |----|-----------------------------------------------|----------------------------|
-| 1  | Introduccion a HTML basico                    | [Ver memoria](./Practica-01-html-basico) |b
+| 1  | Introduccion a HTML basico                    | [Ver memoria](./Practica-01-html-basico) |
+|2   | Practica Servidor Apache                      | [Ver memoria](./Practica-02-apaches) |
