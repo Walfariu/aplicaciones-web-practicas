@@ -12,3 +12,4 @@ Este es un repositorio donde se alamcenan las parcticas de aplicaciones web.
 | 1  | Introduccion a HTML basico                    | [Ver memoria](./Practica-01-html-basico) |
 | 2  | Practica Servidor Apache                      | [Ver memoria](./Practica-02-apaches) |
 | 3  | Practica Instalacion MariaDB                  | [ver memoria](./Practica-03-MariaDB&PHP) |
+| 4  | Practica Instalacion WordPress                | [ver memoria](./Practica-04-Wordpress) |
